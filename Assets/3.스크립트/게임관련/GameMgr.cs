@@ -34,7 +34,6 @@ public class GameMgr : MonoBehaviour
 
             // 스테이지 넘어가기
             Destroy(Aud);
-            Eaud.GetComponent<AudioSource>().Play();
             ani.enabled = true;
             StartCoroutine("delay");
 
@@ -43,6 +42,7 @@ public class GameMgr : MonoBehaviour
 
     IEnumerator delay()
     {
+        Eaud.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(1.2f);
         GetComponent<NextScene>().nScene();
     }
