@@ -14,8 +14,12 @@ public class GameMgr : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.SetInt("Stage", Stage);
-        space = GameObject.Find("space");
+        if (PlayerPrefs.GetInt("Stage") < Stage)
+        {
+            PlayerPrefs.SetInt("Stage", Stage);
+        }
+
+        space = GameObject.Find("Space");
         Aud = GameObject.Find("Audio");
         Eaud = GameObject.Find("End Audio");
         ani = space.GetComponent<Animator>();
@@ -33,7 +37,7 @@ public class GameMgr : MonoBehaviour
             Eaud.GetComponent<AudioSource>().Play();
             ani.enabled = true;
             StartCoroutine("delay");
-            
+
         }
     }
 

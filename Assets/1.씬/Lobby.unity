@@ -201,7 +201,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 23268869}
-        m_MethodName: nScene
+        m_MethodName: rScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -324,7 +324,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ebe1885b8298cc4fa1c2e0b97cefb7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stage: 0
 --- !u!4 &698528294
 Transform:
   m_ObjectHideFlags: 0

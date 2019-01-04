@@ -9,9 +9,24 @@ EditorBuildSettings:
     path: "Assets/1.\uC52C/Lobby.unity"
     guid: c85b18a41ed15f04194c449c8e82fdbe
   - enabled: 1
-    path: "Assets/1.\uC52C/TestScene.unity"
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: "Assets/1.\uC52C/A1.unity"
+    guid: a858afba0b010684fbff744c5bb07f2a
   - enabled: 1
-    path: "Assets/1.\uC52C/TestScene2.unity"
-    guid: efdc2b8e45ceb644ba89244967cc6bda
+    path: "Assets/1.\uC52C/A2.unity"
+    guid: e83b13295ab72054eabbfb75165d5c8f
+  - enabled: 1
+    path: "Assets/1.\uC52C/A3.unity"
+    guid: cb1068036d3d6cb488be7fcd5a811573
+  - enabled: 1
+    path: "Assets/1.\uC52C/A4.unity"
+    guid: 19b4d7359527955418e82b8f17a835f4
+  - enabled: 1
+    path: "Assets/1.\uC52C/A5.unity"
+    guid: 4a0b68c7a1732914b9a0b37653deaba4
+  - enabled: 1
+    path: "Assets/1.\uC52C/A6.unity"
+    guid: 27f6e0645677a694e9df8b2c1664c19c
+  - enabled: 1
+    path: "Assets/1.\uC52C/A7.unity"
+    guid: c23d26142e9bc3a42bfae77a993ea4db
   m_configObjects: {}

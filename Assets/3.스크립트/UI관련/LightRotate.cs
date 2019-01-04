@@ -6,32 +6,34 @@ public class LightRotate : MonoBehaviour {
 
     GameObject Player;
     PlayerRotation PR;
+    RectTransform RT;
     private void Start()
     {
         Player = GameObject.Find("Player");
         PR = Player.GetComponent<PlayerRotation>();
+        RT = GetComponent<RectTransform>();
     }
 
     private void Update()
     {
-        if (PR.dir == 0)
+        if (PR.dir == 0) //하
         {
-            transform.position = new Vector3(0f, -6.76f, 0);
+            RT.localPosition = new Vector3(0f, -388f, 0);
             transform.rotation = Quaternion.Euler(0, 0, 180f);
         }
-        else if (PR.dir == 1)
+        else if (PR.dir == 1) //좌
         {
-            transform.position = new Vector3(-6.75f, -0.07f, 0);
+            RT.localPosition = new Vector3(-405f, 13f, 0);
             transform.rotation = Quaternion.Euler(0, 0, 90f);
         }
-        else if (PR.dir == 2)
+        else if (PR.dir == 2) //상
         {
-            transform.position = new Vector3(0f, 6.65f, 0);
+            RT.localPosition = new Vector3(0f, 418f, 0);
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-        else if (PR.dir == 3)
+        else if (PR.dir == 3) //우
         {
-            transform.position = new Vector3(6.75f, -0.07f, 0);
+            RT.localPosition = new Vector3(405f, 13f, 0);
             transform.rotation = Quaternion.Euler(0, 0, -90f);
         }
     }
