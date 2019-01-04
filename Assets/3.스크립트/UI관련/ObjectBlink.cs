@@ -6,7 +6,7 @@ public class ObjectBlink : MonoBehaviour
 {
     SpriteRenderer SR;
     bool isHide = true;
-
+    public float alpha = 0.3f;
     private void Start()
     {
         SR = GetComponent<SpriteRenderer>();
@@ -19,9 +19,9 @@ public class ObjectBlink : MonoBehaviour
             Color color = SR.color;
             color.a = color.a - Time.deltaTime;
 
-            if (color.a < 0.3f)
+            if (color.a < alpha)
             {
-                color.a = 0.3f;
+                color.a = alpha;
                 isHide = false;
             }
             SR.color = color;

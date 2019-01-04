@@ -15,16 +15,23 @@ public class PlayerSort : MonoBehaviour
     PlayerRotation PR;
     public Sprite Sp;
     SpriteRenderer SR;
+
+    public bool isMove;
+
     void Start()
     {
+        isMove = true;
         SR = GetComponent<SpriteRenderer>();
         rgdy = GetComponent<Rigidbody2D>();
+
         Camera = GameObject.Find("MainCamera");
         originPos = Camera.transform.localPosition;
+
         PR = GetComponent<PlayerRotation>();
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
+        isMove = true;
         rgdy.gravityScale = 0;
         transform.position = new Vector3(Mathf.Ceil(transform.position.x) - 0.5f,
             Mathf.Ceil(transform.position.y) - 0.5f, transform.position.z);

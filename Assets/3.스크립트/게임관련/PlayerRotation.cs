@@ -11,9 +11,11 @@ public class PlayerRotation : MonoBehaviour {
     public int dir;
     public Animator ani;
     public Sprite[] sp;
+    PlayerSort PS;
 
     void Awake()
     {
+        PS = GetComponent<PlayerSort>();
         dir = 0;
         ani = GetComponent<Animator>();
         rgdy = GetComponent<Rigidbody2D>();
@@ -60,12 +62,14 @@ public class PlayerRotation : MonoBehaviour {
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
         {
             endTP = Input.GetTouch(0).position;
-            if ((endTP.x - startTP.x > 100f) && rgdy.velocity.x ==0&& rgdy.velocity.y == 0)
+            if ((endTP.x - startTP.x > 100f) && PS.isMove==true)
             {
+                PS.isMove = false;
                 left();
             }
             if (startTP.x - endTP.x > 100f && rgdy.velocity.x == 0 && rgdy.velocity.y == 0)
             {
+                PS.isMove = false;
                 right();
             }
         }

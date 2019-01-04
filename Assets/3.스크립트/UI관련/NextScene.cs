@@ -14,7 +14,7 @@ public class NextScene : MonoBehaviour {
     }
     public void nScene()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetInt("Stage")+1);
+        SceneManager.LoadScene(GetComponent<GameMgr>().Stage + 1);
     }
     public void rScene()
     {

@@ -10,7 +10,11 @@ public class GameMgr : MonoBehaviour
     public int StageStarNum;
     public static int StarNum = 0;
     public GameObject space, Aud, Eaud;
+    public GameObject Fade;
     Animator ani;
+
+    public GameObject SpaceShip;
+    Vector3 originPos;
 
     void Start()
     {
@@ -18,11 +22,16 @@ public class GameMgr : MonoBehaviour
         {
             PlayerPrefs.SetInt("Stage", Stage);
         }
-
+        Fade = GameObject.Find("Fade");
         space = GameObject.Find("Space");
         Aud = GameObject.Find("Audio");
         Eaud = GameObject.Find("End Audio");
         ani = space.GetComponent<Animator>();
+
+        Fade.SetActive(false);
+
+        SpaceShip = GameObject.Find("SpaceShip");
+        originPos = SpaceShip.transform.localPosition;
     }
 
     void Update()
@@ -31,7 +40,9 @@ public class GameMgr : MonoBehaviour
         if (StarNum == StageStarNum)
         {
             StarNum = 0;
-
+            space.GetComponent<SpaceRotate>().enabled=false;
+            Fade.SetActive(true);
+            StartCoroutine(Shake(10f, 1.3f));
             // 스테이지 넘어가기
             Destroy(Aud);
             ani.enabled = true;
@@ -43,7 +54,19 @@ public class GameMgr : MonoBehaviour
     IEnumerator delay()
     {
         Eaud.GetComponent<AudioSource>().Play();
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(2f);
         GetComponent<NextScene>().nScene();
+    }
+    public IEnumerator Shake(float _amount, float _duration)
+    {
+        float timer = 0;
+        while (timer <= _duration)
+        {
+            SpaceShip.transform.localPosition = (Vector3)Random.insideUnitCircle * _amount + originPos;
+
+            timer += Time.deltaTime;
+            yield return null;
+        }
+        SpaceShip.transform.localPosition = originPos;
     }
 }

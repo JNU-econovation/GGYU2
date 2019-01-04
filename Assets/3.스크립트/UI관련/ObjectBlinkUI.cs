@@ -7,6 +7,8 @@ public class ObjectBlinkUI : MonoBehaviour
 {
     Image img;
     bool isHide = true;
+    public float alpha = 0.3f;
+    public float max = 1f;
 
     private void Start()
     {
@@ -20,9 +22,9 @@ public class ObjectBlinkUI : MonoBehaviour
             Color color = img.color;
             color.a = color.a - Time.deltaTime;
 
-            if (color.a < 0.3f)
+            if (color.a < alpha)
             {
-                color.a = 0.3f;
+                color.a = alpha;
                 isHide = false;
             }
             img.color = color;
@@ -32,9 +34,9 @@ public class ObjectBlinkUI : MonoBehaviour
             Color color = img.color;
             color.a = color.a + Time.deltaTime;
 
-            if (color.a > 1)
+            if (color.a > max)
             {
-                color.a = 1.0f;
+                color.a = max;
                 isHide = true;
             }
             img.color = color;
