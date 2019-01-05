@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpaceRotate : MonoBehaviour {
-
+    public float rotSpeed = 0.03f;
 	// Use this for initialization
 	void Start () {
 		
@@ -11,6 +11,6 @@ public class SpaceRotate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(0, 0, 0.03f);
+        transform.Rotate(0, 0, rotSpeed);
 	}
 }

@@ -42,7 +42,7 @@ public class GameMgr : MonoBehaviour
             StarNum = 0;
             space.GetComponent<SpaceRotate>().enabled=false;
             Fade.SetActive(true);
-            StartCoroutine(Shake(10f, 1.3f));
+            StartCoroutine(Shake(12f, 1.3f));
             // 스테이지 넘어가기
             Destroy(Aud);
             ani.enabled = true;
