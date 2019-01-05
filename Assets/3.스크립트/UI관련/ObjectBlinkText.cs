@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class PressAnyBtn : MonoBehaviour
+public class ObjectBlinkText : MonoBehaviour
 {
     public Text txtTest;
     bool isHide = true;
@@ -33,7 +33,5 @@ public class PressAnyBtn : MonoBehaviour
             }
             txtTest.color = color;
         }
-        Debug.Log(isHide);
     }
-
 }

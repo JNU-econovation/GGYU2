@@ -67,7 +67,7 @@ public class PlayerRotation : MonoBehaviour {
                 PS.isMove = false;
                 left();
             }
-            if (startTP.x - endTP.x > 100f && rgdy.velocity.x == 0 && rgdy.velocity.y == 0)
+            if (startTP.x - endTP.x > 100f && PS.isMove == true)
             {
                 PS.isMove = false;
                 right();

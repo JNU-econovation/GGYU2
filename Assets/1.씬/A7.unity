@@ -2056,7 +2056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e2f1ef35785d248855dcb4638039c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stage: 6
+  Stage: 8
   StageStarNum: 4
   space: {fileID: 0}
   Aud: {fileID: 0}
@@ -2074,6 +2074,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdcbde52ce978d04b894f39c803b3d0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  L1: {fileID: 0}
+  L2: {fileID: 0}
 --- !u!1 &1335267702
 GameObject:
   m_ObjectHideFlags: 0

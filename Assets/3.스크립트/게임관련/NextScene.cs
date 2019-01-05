@@ -2,22 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class NextScene : MonoBehaviour {
-
-	public void cScene()
+public class NextScene : MonoBehaviour
+{
+    public void cScene() // restart버튼
     {
         SceneManager.LoadScene(GetComponent<GameMgr>().Stage);
     }
-    public void qScene()
+    public void qScene() // 로비씬으로
     {
-        SceneManager.LoadScene("Lobby");
+        SceneManager.LoadScene(0);
     }
-    public void nScene()
+    public void nScene() // 다음스테이지
     {
         SceneManager.LoadScene(GetComponent<GameMgr>().Stage + 1);
     }
-    public void rScene()
+    public void sScene()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetInt("Stage", 1));
+        SceneManager.LoadScene(int.Parse(transform.name));
     }
 }
