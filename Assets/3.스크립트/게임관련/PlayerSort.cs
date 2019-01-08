@@ -31,6 +31,13 @@ public class PlayerSort : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
+        if (col.transform.tag == "Wall")
+        {
+            coll();
+        }
+    }
+    public void coll()
+    {
         isMove = true;
         rgdy.gravityScale = 0;
         transform.position = new Vector3(Mathf.Ceil(transform.position.x) - 0.5f,
@@ -56,10 +63,6 @@ public class PlayerSort : MonoBehaviour
         PR.ani.enabled = false;
         SR.sprite = Sp;
         StartCoroutine(Shake(0.1f, 0.2f));
-    }
-    void Update()
-    {
-        //transform.rotation = Quaternion.identity;
     }
     public IEnumerator Shake(float _amount, float _duration)
     {
