@@ -4,6 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 public class FadeController : MonoBehaviour
 {
+    public bool swit;
+
+    void Start()
+    {
+        if(swit)
+        {
+            FadeIn(3);
+        }
+        else
+        {
+            FadeOut(3);
+        }
+    }
+
     public void FadeIn(float fadeOutTime)
     {
         StartCoroutine(CoFadeIn(fadeOutTime));

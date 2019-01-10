@@ -18,8 +18,11 @@ public class PlayerSort : MonoBehaviour
 
     public bool isMove;
 
+    public bool gate;
+
     void Start()
     {
+        gate = true;
         isMove = true;
         SR = GetComponent<SpriteRenderer>();
         rgdy = GetComponent<Rigidbody2D>();
@@ -34,11 +37,12 @@ public class PlayerSort : MonoBehaviour
         if (col.transform.tag == "Wall")
         {
             coll();
+            isMove = true;
+            StartCoroutine(Shake(0.1f, 0.2f));
         }
     }
     public void coll()
     {
-        isMove = true;
         rgdy.gravityScale = 0;
         transform.position = new Vector3(Mathf.Ceil(transform.position.x) - 0.5f,
             Mathf.Ceil(transform.position.y) - 0.5f, transform.position.z);
@@ -62,7 +66,6 @@ public class PlayerSort : MonoBehaviour
         }
         PR.ani.enabled = false;
         SR.sprite = Sp;
-        StartCoroutine(Shake(0.1f, 0.2f));
     }
     public IEnumerator Shake(float _amount, float _duration)
     {

@@ -23,6 +23,7 @@ public class Shield : MonoBehaviour
         }
         else
         {
+            PS.isMove = true;
             rgdy.velocity = new Vector2(0f,0f);
             PS.coll();
         }

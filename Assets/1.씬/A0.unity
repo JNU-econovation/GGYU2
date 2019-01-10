@@ -119,6 +119,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1033937943}
     m_Modifications:
+    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114920229532991560, guid: 02fb162772a5d3e48a3c4df2678eb496,
+        type: 3}
+      propertyPath: alpha
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114920229532991560, guid: 02fb162772a5d3e48a3c4df2678eb496,
+        type: 3}
+      propertyPath: max
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 224700973436747714, guid: 02fb162772a5d3e48a3c4df2678eb496,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -208,46 +248,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114920229532991560, guid: 02fb162772a5d3e48a3c4df2678eb496,
-        type: 3}
-      propertyPath: alpha
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114920229532991560, guid: 02fb162772a5d3e48a3c4df2678eb496,
-        type: 3}
-      propertyPath: max
-      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02fb162772a5d3e48a3c4df2678eb496, type: 3}
@@ -1338,6 +1338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sp: {fileID: 21300000, guid: ffda4773aa736784c95cefb40b0bc824, type: 3}
   isMove: 0
+  gate: 0
 --- !u!61 &970386611
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2008,7 +2009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.08627451, g: 0.14117648, b: 0.21176472, a: 1}
+  m_Color: {r: 0.20000002, g: 0.1764706, b: 0.21176472, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2097,6 +2098,7 @@ MonoBehaviour:
   Aud: {fileID: 0}
   Eaud: {fileID: 0}
   Fade: {fileID: 0}
+  chapter: 1
   SpaceShip: {fileID: 0}
 --- !u!114 &1310649330
 MonoBehaviour:
@@ -2444,7 +2446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.43867922, g: 0.7960404, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

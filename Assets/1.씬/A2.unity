@@ -119,6 +119,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1033937943}
     m_Modifications:
+    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114920229532991560, guid: 02fb162772a5d3e48a3c4df2678eb496,
+        type: 3}
+      propertyPath: alpha
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114920229532991560, guid: 02fb162772a5d3e48a3c4df2678eb496,
+        type: 3}
+      propertyPath: max
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 224700973436747714, guid: 02fb162772a5d3e48a3c4df2678eb496,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -208,21 +223,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224867517271212312, guid: 02fb162772a5d3e48a3c4df2678eb496,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114920229532991560, guid: 02fb162772a5d3e48a3c4df2678eb496,
-        type: 3}
-      propertyPath: alpha
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114920229532991560, guid: 02fb162772a5d3e48a3c4df2678eb496,
-        type: 3}
-      propertyPath: max
-      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02fb162772a5d3e48a3c4df2678eb496, type: 3}
@@ -667,15 +667,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: -4, y: -3, z: 0}
-    second:
-      m_TileIndex: 0
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 4, y: -3, z: 0}
     second:
       m_TileIndex: 0
@@ -713,6 +704,15 @@ Tilemap:
       m_TileFlags: 1
       m_ColliderType: 1
   - first: {x: -5, y: -1, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: -4, y: -1, z: 0}
     second:
       m_TileIndex: 0
       m_TileSpriteIndex: 1
@@ -1382,6 +1382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sp: {fileID: 21300000, guid: ffda4773aa736784c95cefb40b0bc824, type: 3}
   isMove: 0
+  gate: 0
 --- !u!61 &970386611
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1976,6 +1977,7 @@ MonoBehaviour:
   Aud: {fileID: 0}
   Eaud: {fileID: 0}
   Fade: {fileID: 0}
+  chapter: 0
   SpaceShip: {fileID: 0}
 --- !u!114 &1310649330
 MonoBehaviour:

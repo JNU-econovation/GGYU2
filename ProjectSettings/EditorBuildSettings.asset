@@ -44,4 +44,16 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/1.\uC52C/A11.unity"
     guid: 74fcec18b92602045bd8ddea0c2a1023
+  - enabled: 1
+    path: "Assets/1.\uC52C/A12.unity"
+    guid: 55762e722adec0a479b47946e5c900af
+  - enabled: 1
+    path: "Assets/1.\uC52C/A13.unity"
+    guid: 09c2d4db84ee04d42ab54e9ea187c3b7
+  - enabled: 1
+    path: "Assets/1.\uC52C/A14.unity"
+    guid: 2aedddf4a102755419bda8305a216cc1
+  - enabled: 1
+    path: "Assets/1.\uC52C/Clear.unity"
+    guid: 81db2ffc569fc6d4fa07d42c4fbd2463
   m_configObjects: {}

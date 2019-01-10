@@ -1901,6 +1901,7 @@ MonoBehaviour:
   Aud: {fileID: 0}
   Eaud: {fileID: 0}
   Fade: {fileID: 0}
+  chapter: 1
   SpaceShip: {fileID: 0}
 --- !u!114 &1310649330
 MonoBehaviour:

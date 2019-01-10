@@ -13,11 +13,14 @@ public class GameMgr : MonoBehaviour
     public GameObject Fade;
     Animator ani;
 
+    public bool chapter = false;
+
     public GameObject SpaceShip;
     Vector3 originPos;
 
     void Start()
     {
+        PlayerPrefs.SetInt("chapter", Stage);
         if (PlayerPrefs.GetInt("Stage") < Stage)
         {
             PlayerPrefs.SetInt("Stage", Stage);
@@ -55,7 +58,14 @@ public class GameMgr : MonoBehaviour
     {
         Eaud.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(2f);
-        GetComponent<NextScene>().nScene();
+        if(chapter)
+        {
+            GetComponent<NextScene>().ccScene();
+        }
+        else
+        {
+            GetComponent<NextScene>().nScene();
+        }
     }
     public IEnumerator Shake(float _amount, float _duration)
     {

@@ -64,13 +64,11 @@ public class PlayerRotation : MonoBehaviour {
             endTP = Input.GetTouch(0).position;
             if ((endTP.x - startTP.x > 100f) && PS.isMove==true)
             {
-                Debug.Log("왼쪽돌리기");
                 PS.isMove = false;
                 left();
             }
             if (startTP.x - endTP.x > 100f && PS.isMove == true)
             {
-                Debug.Log("오른쪽돌리기");
                 PS.isMove = false;
                 right();
             }

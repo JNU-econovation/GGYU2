@@ -13,7 +13,6 @@ public class StarHole : MonoBehaviour {
             col.transform.tag = "starOn";
             col.GetComponent<StarOn>().Shine();
             GameMgr.StarNum++;
-            Debug.Log("starOn");
         }
     }
 }
