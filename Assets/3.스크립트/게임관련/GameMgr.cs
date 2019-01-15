@@ -43,7 +43,7 @@ public class GameMgr : MonoBehaviour
         if (StarNum == StageStarNum)
         {
             StarNum = 0;
-            space.GetComponent<SpaceRotate>().enabled=false;
+            space.GetComponent<SpaceRotate>().enabled = false;
             Fade.SetActive(true);
             StartCoroutine(Shake(12f, 1.3f));
             // 스테이지 넘어가기
@@ -57,15 +57,11 @@ public class GameMgr : MonoBehaviour
     IEnumerator delay()
     {
         Eaud.GetComponent<AudioSource>().Play();
-        yield return new WaitForSeconds(2f);
-        if(chapter)
-        {
-            GetComponent<NextScene>().ccScene();
-        }
-        else
-        {
-            GetComponent<NextScene>().nScene();
-        }
+        yield return new WaitForSeconds(2.1f);
+        GetComponent<NextScene>().ccScene();
+
+        //GetComponent<NextScene>().nScene();
+
     }
     public IEnumerator Shake(float _amount, float _duration)
     {

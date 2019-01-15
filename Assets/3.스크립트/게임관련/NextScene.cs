@@ -4,6 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class NextScene : MonoBehaviour
 {
+    GameObject Dark;
+    void Start()
+    {
+        Dark = GameObject.Find("Dark");
+    }
+
     public void cScene() // restart버튼
     {
         GameMgr.StarNum = 0;
@@ -20,10 +26,36 @@ public class NextScene : MonoBehaviour
     }
     public void sScene()
     {
-        SceneManager.LoadScene(int.Parse(transform.name));
+        StartCoroutine(DarkUp());
     }
     public void ccScene()
     {
-        SceneManager.LoadScene("Clear");
+        if (PlayerPrefs.GetInt("chapter", 1).Equals(1))
+        {
+            SceneManager.LoadScene("C1");
+        }
+        else if (PlayerPrefs.GetInt("chapter", 1) <= 8)
+        {
+            SceneManager.LoadScene("C2");
+        }
+        else if (PlayerPrefs.GetInt("chapter", 1) <= 12)
+        {
+            SceneManager.LoadScene("C3");
+        }
+        else if (PlayerPrefs.GetInt("chapter", 1) <= 17)
+        {
+            SceneManager.LoadScene("C4");
+        }
+    }
+
+    IEnumerator DarkUp()
+    {
+        for(int i=0;i<35;i++)
+        {
+            yield return new WaitForSeconds(0.01f);
+            Dark.transform.Translate(0, 70f, 0);
+        }
+        yield return null;
+        SceneManager.LoadScene(int.Parse(transform.name));
     }
 }

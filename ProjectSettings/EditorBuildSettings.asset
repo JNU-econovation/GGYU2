@@ -49,11 +49,29 @@ EditorBuildSettings:
     guid: 55762e722adec0a479b47946e5c900af
   - enabled: 1
     path: "Assets/1.\uC52C/A13.unity"
-    guid: 09c2d4db84ee04d42ab54e9ea187c3b7
+    guid: 7852364d8439a4a40815b04e19fd68fe
   - enabled: 1
     path: "Assets/1.\uC52C/A14.unity"
+    guid: 09c2d4db84ee04d42ab54e9ea187c3b7
+  - enabled: 1
+    path: "Assets/1.\uC52C/A15.unity"
     guid: 2aedddf4a102755419bda8305a216cc1
   - enabled: 1
-    path: "Assets/1.\uC52C/Clear.unity"
-    guid: 81db2ffc569fc6d4fa07d42c4fbd2463
+    path: "Assets/1.\uC52C/A16.unity"
+    guid: ad4c02c66f63e4e44ba4b3f1b47c25d7
+  - enabled: 1
+    path: "Assets/1.\uC52C/A17.unity"
+    guid: a1b46d611fbb00247a70d89ceba17ee0
+  - enabled: 1
+    path: "Assets/1.\uC52C/C1.unity"
+    guid: a806b79827bd19c4d866f7cde592d3da
+  - enabled: 1
+    path: "Assets/1.\uC52C/C2.unity"
+    guid: 1595ac25a4006a44b9fae5ac7aa9f59c
+  - enabled: 1
+    path: "Assets/1.\uC52C/C3.unity"
+    guid: 569d42173c1ca6e45aac6048c299f76f
+  - enabled: 1
+    path: "Assets/1.\uC52C/C4.unity"
+    guid: 4cac49ea9d755aa46a6412633c7d3dde
   m_configObjects: {}

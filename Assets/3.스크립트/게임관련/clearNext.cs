@@ -5,24 +5,10 @@ using UnityEngine;
 public class clearNext : MonoBehaviour
 {
     public GameObject Guide;
-    public GameObject chapter;
 
-    void Start()
+    private void Start()
     {
         StartCoroutine(CN());
-        if(PlayerPrefs.GetInt("chapter",1).Equals(1))
-        {
-            chapter.transform.localRotation = Quaternion.Euler(0, 0, -45f);
-        }
-        else if (PlayerPrefs.GetInt("chapter", 1).Equals(8))
-
-        {
-            chapter.transform.localRotation = Quaternion.Euler(0, 0, 0);
-        }
-        else if (PlayerPrefs.GetInt("chapter", 1).Equals(12))
-        {
-            chapter.transform.localRotation = Quaternion.Euler(0, 0, 45);
-        }
     }
 
     IEnumerator CN()
