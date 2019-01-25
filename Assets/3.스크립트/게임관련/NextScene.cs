@@ -46,6 +46,10 @@ public class NextScene : MonoBehaviour
         {
             SceneManager.LoadScene("C4");
         }
+        else if (PlayerPrefs.GetInt("chapter", 1) == 18)
+        {
+            SceneManager.LoadScene("C5");
+        }
     }
 
     IEnumerator DarkUp()

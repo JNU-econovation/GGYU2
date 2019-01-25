@@ -74,4 +74,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/1.\uC52C/C4.unity"
     guid: 4cac49ea9d755aa46a6412633c7d3dde
+  - enabled: 1
+    path: "Assets/1.\uC52C/C5.unity"
+    guid: 4197a6281ed69a544941158ac4448ee9
   m_configObjects: {}

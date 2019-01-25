@@ -148,7 +148,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.gnd.laika
+    Android: com.dng.laika
     Standalone: com.Company.ProductName
   buildNumber: {}
   AndroidBundleVersionCode: 1
@@ -239,7 +239,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: "C:/Users/basso/OneDrive/\uBC14\uD0D5 \uD654\uBA74/MARIO/Unity_Keystore/laika.keystore"
+  AndroidKeystoreName: "C:/Users/basso/OneDrive/\uBC14\uD0D5 \uD654\uBA74/MARIO/Keystore/laika.keystore"
   AndroidKeyaliasName: laika
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
@@ -257,7 +257,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: f359de0cda8359f4e887ee65438b45ab, type: 3}
+      m_Icon: {fileID: 2800000, guid: f7131b7b8f5299244a680668b8242854, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -589,7 +589,8 @@ PlayerSettings:
   webGLCompressionFormat: 1
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    7: 
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}
